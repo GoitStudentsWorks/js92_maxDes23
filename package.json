@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "start": "vite",
-    "build": "vite build --base=/project-js-group-1-g2g/",
+    "build": "vite build --base=/js92_maxDes23/",
     "preview": "vite preview"
   },
   "devDependencies": {
