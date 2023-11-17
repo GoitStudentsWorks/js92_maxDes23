@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-light">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf</title>
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+
+    <!-- Custom styles -->
+    
+    <script type="module" crossorigin src="/js92_maxDes23/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/js92_maxDes23/assets/vendor-ab85f73e.js">
+    <link rel="modulepreload" crossorigin href="/js92_maxDes23/assets/support-e55f7c91.js">
+    <link rel="stylesheet" href="/js92_maxDes23/assets/vendor-6c527891.css">
+    <link rel="stylesheet" href="/js92_maxDes23/assets/support-e950ea1a.css">
+  </head>
+  <body>
+    <header>
+  <div class="header-container container">
+    <a href="./index.html"
+      ><div class="logo">
+        <svg class="logo-icon" width="24" height="24">
+          <use href="/js92_maxDes23/assets/icons-55a1aa95.svg#logo"></use>
+        </svg>
+
+        <svg class="logo-name" width="77" height="14">
+          <use href="/js92_maxDes23/assets/icons-55a1aa95.svg#Bookshelf"></use>
+        </svg>
+      </div>
+    </a>
+    <nav class="nav-list">
+      <a href="./index.html"><div class="nav-item home">HOME</div></a>
+      <a href="./shop-list.html">
+        <div class="nav-item basket">
+          SHOPPING LIST
+          <svg class="basket-ico" width="20" height="20">
+            <use href="/js92_maxDes23/assets/icons-55a1aa95.svg#uil_cart"></use>
+          </svg>
+        </div>
+      </a>
+      <div class="books-quantity display-none"></div>
+    </nav>
+
+    <div class="header-blocks">
+      <div class="switcher-block">
+        <div class="toggler"></div>
+        <div class="switcher"></div>
+      </div>
+      <div class="burger-menu">
+        <svg class="burger-icon" width="28" height="28">
+          <use class="mob-ico" href="/js92_maxDes23/assets/icons-55a1aa95.svg#burger"></use>
+        </svg>
+      </div>
+      <button class="sign-up-button" type="button">
+        <span class="sign-up-btn-text">Sign up</span>
+        <svg class="sign-up-icon" width="20px" height="20px">
+          <use href="/js92_maxDes23/assets/icons-55a1aa95.svg#sign-up-icon"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+    <main>
+      <section class="section-container">
+        <div class="main-content container">
+          <div class="left-container">
+            <div class="categories_container">
+    <ul class="categories">
+        <li><a class='categories_item active_category' href="#">All Categories</a></li>
+    </ul>
+</div>
+            <div id="sliderOne" class="splide" aria-label="">
+  <div class="sup-container">
+    <div class="sup-top">
+      <h3 class="sup-tittle">Support Ukraine</h3>
+      <svg class="trident">
+        <use href="/js92_maxDes23/assets/icons-55a1aa95.svg#icon-trident"></use>
+      </svg>
+    </div>
+    <div class="splide__track">
+      <ol class="splide__list"></ol>
+    </div>
+    <div class="splide__arrows">
+      <button class="splide__arrow splide__arrow--prev">Prev</button>
+      <button class="splide__arrow splide__arrow--next">
+        <svg id="rotate-svg" class="icon-slider">
+          <use class="support-arrow-ico" href="/js92_maxDes23/assets/icons-55a1aa95.svg#icon-ar-up"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+          </div>
+          <div class="container-gallary">
+  <!-- <div class="loader"></div> -->
+  <p class="category-title">Best Sellers <span>Books</span></p>
+  <div class="category-container"></div>
+</div>
+
+        </div>
+        <div class="modal"></div>
+<div class="backdrop"></div>
+
+        <div class="menu__body">
+  <div class="mobile-menu-content">
+    <div class="user-block">
+      <img class="user-photo" src="/js92_maxDes23/assets/stephan-9e4ab9dd.png" alt="" />
+      <h3 class="user-name">Stephan</h3>
+    </div>
+    <button class="sign-up-mobile" type="button">
+      <span class="sign-up-btn-text">Sign up</span>
+      <svg class="sign-up-icon" width="20px" height="20px">
+        <use href="/js92_maxDes23/assets/icons-55a1aa95.svg#sign-up-icon"></use>
+      </svg>
+    </button>
+    <div class="mobile-nav">
+      <a href="./index.html"><div class="nav-item mob-home">HOME</div></a>
+      <a href="./shop-list.html">
+        <div class="nav-item mob-basket">
+          SHOPPING LIST
+          <svg class="mob-basket-ico" width="20" height="20">
+            <use href="/js92_maxDes23/assets/icons-55a1aa95.svg#uil_cart"></use>
+          </svg>
+        </div>
+      </a>
+    </div>
+
+    <!--  logout btn -->
+    <div class="mobile-logout-div">
+      <button class="log-out-btn" type="button">
+        <span class="log-out-text">Log out</span>
+
+        <svg class="log-out-icon" width="20px" height="20px">
+          <use href="/js92_maxDes23/assets/icons-55a1aa95.svg#icon-arrow-narrow-right"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+        <!-- AUTHORIZATION -->
+<div class="backdrop-modal-sign-up display-none" id="authorization">
+  <div class="modal-sign-up">
+    <button class="modal-close-btn" type="btn">
+      <svg class="modal-close-btn-icon" width="20" height="20">
+        <use href="/js92_maxDes23/assets/icons-55a1aa95.svg#icon-x-close"></use>
+      </svg>
+    </button>
+    <form class="sign-up-form">
+      <input
+        type="name"
+        name="user_name"
+        class="sign-up-modal-input"
+        id="name"
+        placeholder="NAME"
+        required
+      />
+      <input
+        type="email"
+        name="user_email"
+        class="sign-up-modal-input"
+        id="email"
+        placeholder="EMAIL"
+        required
+      />
+      <input
+        type="password"
+        name="password"
+        class="sign-up-modal-input"
+        id="password"
+        placeholder="PASSWORD"
+        required
+      />
+      <button type="submit" class="sign-up-submit-btn sign-up-btn">
+        SIGN UP
+      </button>
+    </form>
+    <div class="sign-up-info">
+      <a class="sign-up-link" href="#">SIGN UP</a>
+      <button class="sign-in-btn" type="button">SIGN IN</button>
+    </div>
+  </div>
+</div>
+
+      </section>
+    </main>
+
+    <!-- skroll up -->
+<button type="button" class="scroll-up" id="scroll-up">
+  <img
+    class="scroll-up-img"
+    src="data:image/png;base64,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"
+    alt="up"
+    width="64"
+    height="64"
+  />
+</button>
+
+
+    
+  </body>
+</html>
